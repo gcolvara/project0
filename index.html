@@ -5,6 +5,55 @@
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+        @media (min-width: 500px) {
+          h3 {
+            color: gray;
+          }
+
+          .grid {
+            background-color: lightgray;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: auto auto auto auto
+          }
+
+          .grid-item {
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+          }
+
+          .grid-item2 {
+            background-color: lightgray;
+            padding: 20px;
+          }
+        }
+
+        @media (max-width: 499px) {
+          h3 {
+            color: white;
+          }
+
+          .grid {
+            background-color: gray;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px
+          }
+
+          .grid-item {
+
+            background-color: black;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+          }
+        }
 
         </style>
     <head>
@@ -12,29 +61,36 @@
               <h1 style="text-align: center;"></h1>
               <p>Hello, this web page will introduce you my hobbies.</p>
                   <ol>
-                      <li><a href="sports.html" style="color: gray">Sports</a></li>
+                      <li>Sports</li>
                         <ul>
                           <li>Soccer</li>
                           <li>Fight</li>
                           <li>Others</li>
                         </ul>
-                      <li><a href="games.html" style="color: gray">Games</a></li>
+                      <li>Games</li>
                         <ul>
                           <li>League Of Legends</li>
                           <li>Fortnite</li>
                           <li>Others</li>
                         </ul>
-                      <li><a href="music.html" style="color: gray">Music</a></li>
+                      <li>Music</li>
                         <ul>
                           <li>Guitar</li>
                           <li>Bass</li>
                           <li>Keyboard/Piano</li>
                         </ul>
-                      <li><a href="programming" style="color: gray">Programming</a></li>
+                      <li>Programming</li>
                         <ul>
                           <li>My newest hobbie!</li>
                         </ul>
                   </ol>
-
+              <p align="justify">As you can see, I have some distinct hobbies but I really like them. I have the hobbies that I start to have when I was a kid and they are: Sports and Games. I have a hobbie I started when I was a teenager and learned how to play some instruments: Music. And, my newest hobbie is something that I always had a kind of interest but I had never tried until few weeks ago, and this hobbie is: Programming.
+              <h3 style="text-align: center;">My two favorites hobbies:</h3>
+            <div class="grid">
+              <div class="grid-item2"> </div>
+              <div class="grid-item"><a href="sports.html">Sports</a></div>
+              <div class="grid-item"><a href="games.html">Games</a></div>
+              <div class="grid-item2"> </div>
+            </div>
   </body>
 </html>
