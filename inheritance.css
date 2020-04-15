@@ -1,0 +1,15 @@
+.start {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 20px;
+}
+
+.start {
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=inheritance.css.map */
